@@ -1,0 +1,76 @@
+@import "colors";
+@import "reset";
+@import "fonts";
+@import "header";
+
+body {
+  background-color: $primary;
+  color: $white-primary;
+}
+main {
+  padding-top: 74px;
+}
+
+.section {
+  padding-top: 1rem;
+  position: relative;
+
+  .section-heading {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2rem;
+  }
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.container {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  padding: .5rem 1rem;
+
+  &.primary {
+    background-color: $secondary;
+    color: $white;
+  }
+}
+
+.date-subtitle {
+  font-size: .75rem;
+}
+
+.image-wrapper {
+  border-right: 1px solid $primary-dark;
+  background-color: $white;
+  height: 30vh;
+  width: 100%;
+}
+.image-wrapper--poster {
+  aspect-ratio: 3 / 4;
+  background-color: $white;
+  margin: 1.5rem 1rem;
+  width: 100%;
+}
+
+.content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}

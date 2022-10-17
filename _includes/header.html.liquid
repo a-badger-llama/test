@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header-banner">
-    <h1 class="header-title">{{ include.title | default: site.title }}</h1>
+    <h1 class="header-title">{{ include.title | default: site.title | upcase }}</h1>
 
     <span class="menu-toggle"><i class="fa-solid fa-bars"></i></span>
   </div>

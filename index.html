@@ -2,7 +2,9 @@
 layout: default.html
 ---
 <section>
-  {%- include carousel.html.liquid -%}
+  {%- assign cards = site.data.announcements -%}
+
+  {%- include carousel.html.liquid cards=cards -%}
 </section>
 
 <section>
@@ -15,6 +17,8 @@ layout: default.html
   <h1 class="section-heading">Projects</h1>
 
   <div class="container">
-    {%- include card-carousel.html.liquid -%}
+    {%- assign cards = site.data.projects -%}
+
+    {%- include carousel.html.liquid cards=cards -%}
   </div>
 </section>

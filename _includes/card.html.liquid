@@ -1,12 +1,33 @@
-<div class="container">
-  <div class="image-wrapper"></div>
+{%- assign card = include.card -%}
+{%- assign title = card["title"] -%}
+{%- assign date = card["date"] -%}
+{%- assign tagline = card["tagline"] -%}
+{%- assign background_image_path = card["background_image_path"] -%}
+{%- assign image_path = card["image_path"] -%}
+{%- assign content = card["content"] -%}
+{%- assign class-list = card["class-list"] -%}
+{%- assign call-to-action = card["call-to-action"] -%}
+
+<div class="container {{ class-list }}">
+  {%- unless background_image_path == null -%}
+    <div class="image-wrapper--bg"></div>
+  {%- endunless -%}
+  {%- unless image_path == null -%}
+    <div class="image-wrapper"></div>
+  {%- endunless -%}
   <div class="content-wrapper">
     <div class="content title-wrapper">
-      <h1>{{ include.title }}</h1>
-      <h4 class="date-subtitle">{{ include.date }}</h4>
+      <h1>{{ title }}</h1>
+      <h4 class="date-subtitle">{{ date }}</h4>
     </div>
+    {%- unless tagline == null -%}
+      <h3>{{ tagline }}</h3>
+    {%- endunless -%}
+    <p class="content">{{ content }}</p>
 
-    <p class="content">{{ include.content }}</p>
-    <button class="content btn primary">Call to Action</button>
+    {%- unless call-to-action == null -%}
+      <button class="content btn primary">Call to Action</button><h3>{{ tagline }}</h3>
+    {%- endunless -%}
+
   </div>
 </div>

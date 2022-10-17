@@ -1,0 +1,18 @@
+- title: Announcement 1
+  date: 2022-10-16
+  image_path: path/to/image
+  content: Some announcement text. This will probably be a few sentences. At least three, I'd say.
+  class-list: lt-text
+  call-to-action: Call to Action
+- title: Announcement 2
+  date: 2022-10-16
+  image_path: path/to/image
+  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi.
+  class-list: lt-text
+  call-to-action: Call to Action
+- title: Announcement 3
+  date: 2022-10-16
+  image_path: path/to/image
+  content: Some announcement text. This will probably be a few sentences. At least three, I'd say.
+  class-list: lt-text
+  call-to-action: Call to Action

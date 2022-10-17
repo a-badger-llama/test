@@ -5,22 +5,28 @@
 
 body {
   background-color: $primary;
-  color: $white-primary;
+  color: $primary-dark;
+  height: 100vh;
+  scroll-padding-top: 100px;
 }
 main {
-  padding-top: 74px;
+  padding-top: 100px;
+}
+
+.lt-text {
+  color: $white-primary;
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
   position: relative;
 
   .section-heading {
+    color: $white-primary;
     font-size: 1.5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 2rem;
+    margin: .5rem 1rem;
   }
 }
 
@@ -31,9 +37,11 @@ main {
 }
 
 .container {
+  align-content: start;
   display: flex;
   flex: 0 0 auto;
   flex-wrap: wrap;
+  position: relative;
   width: 100%;
 }
 
@@ -60,6 +68,15 @@ main {
   height: 30vh;
   width: 100%;
 }
+.image-wrapper--bg {
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
 .image-wrapper--poster {
   aspect-ratio: 3 / 4;
   background-color: $white;
@@ -73,4 +90,8 @@ main {
   flex-direction: column;
   margin: 0 auto;
   padding: 2rem 4rem;
+
+  .content {
+    margin: .5rem 0;
+  }
 }

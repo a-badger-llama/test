@@ -16,9 +16,7 @@ layout: default.html
 <section class="section">
   <h1 class="section-heading">Projects</h1>
 
-  <div class="container">
-    {%- assign cards = site.data.projects -%}
+  {%- assign cards = site.data.projects -%}
 
-    {%- include carousel.html.liquid cards=cards -%}
-  </div>
+  {%- include carousel.html.liquid cards=cards -%}
 </section>

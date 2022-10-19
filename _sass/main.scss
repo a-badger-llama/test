@@ -11,7 +11,7 @@ body {
   scroll-padding-top: 100px;
 }
 main {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .lt-text {
@@ -55,7 +55,7 @@ main {
 
   &.primary {
     background-color: $secondary;
-    color: $white;
+    color: $white-secondary;
   }
 }
 
@@ -95,4 +95,14 @@ main {
   .content {
     margin: .5rem 0;
   }
+}
+
+.banner-action {
+  align-self: stretch;
+  background-color: $secondary-dark;
+  color: $primary;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: .25rem 0;
 }

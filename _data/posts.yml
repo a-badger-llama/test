@@ -1,0 +1,15 @@
+- title: the Mind of Gods
+  background_image_path: path/to/image
+  tags: tmog
+  tagline: Who will they turn to?
+- title: Anthology
+  background_image_path: path/to/image
+  tags: anthology
+  tagline: Who will they turn to?
+#
+#layout: post.html
+#title:  Blog Post 1
+#categories:
+#image_path: assets/images/daria-kraplak-d34DtRp1bqo-unsplash.jpg
+#image_description: typewriter
+#type: essay

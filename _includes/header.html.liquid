@@ -1,13 +1,10 @@
 <header class="header">
   <div class="header-banner">
-    <h1 class="header-title">{{ include.title | default: site.title | upcase }}</h1>
-
-    <span class="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+    <h1 class="header-title">
+      <a href="{{ site.url | relative_url }}">{{ include.title | default: site.title | upcase }}</a>
+    </h1>
+    <p class="header-subtitle">{{ site.subtitle }}</p>
   </div>
-
-  <a class="header-action">
-    <h3>Banner Action</h3>
-  </a>
 
   <nav class="navbar">
     <ul class="nav-links">
@@ -17,4 +14,8 @@
       <li class="nav-link"><a href="#">Me</a></li>
     </ul>
   </nav>
+
+  <a class="menu-toggle header-action">
+    <i class=" fa-solid fa-minus"></i>
+  </a>
 </header>

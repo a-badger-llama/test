@@ -18,8 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-url: https://a-badger-llama.github.io
-baseurl: /test
 title: Jonathan Fox
 subtitle: I write.
 email: jonathan@jonathanfox.me
